@@ -1,0 +1,2246 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+
+<meta charset="UTF-8">
+
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+<title>Happy Birthday Sharmila ❤️</title>
+
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+
+<link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:wght@400;500;600;700&family=Great+Vibes&family=Montserrat:wght@400;500;600&display=swap" rel="stylesheet">
+
+
+<style>
+
+/* =====================================================
+   BASIC
+===================================================== */
+
+:root {
+    --pink: #e96f91;
+    --light-pink: #f8c4d0;
+    --cream: #fff8f2;
+    --dark: #160d13;
+    --dark2: #321522;
+    --gold: #e3bc7a;
+}
+
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+body {
+    font-family: Montserrat, sans-serif;
+    background: var(--cream);
+    color: #24171d;
+    overflow-x: hidden;
+}
+
+.hidden {
+    display: none !important;
+}
+
+
+/* =====================================================
+   INTRO / LOCK SCREEN
+===================================================== */
+
+.intro {
+    position: fixed;
+    inset: 0;
+    z-index: 10000;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    text-align: center;
+
+    padding: 25px;
+
+    background:
+        radial-gradient(
+            circle at 20% 20%,
+            #633047,
+            transparent 30%
+        ),
+        radial-gradient(
+            circle at 80% 80%,
+            #4d2639,
+            transparent 30%
+        ),
+        #110a0f;
+
+    color: white;
+}
+
+.intro-card {
+    max-width: 650px;
+    width: 100%;
+}
+
+.intro-heart {
+    font-size: 55px;
+
+    animation:
+        heartbeat 1.2s infinite;
+}
+
+@keyframes heartbeat {
+
+    50% {
+        transform: scale(1.15);
+    }
+
+}
+
+.script {
+    font-family: "Great Vibes", cursive;
+}
+
+.intro h1 {
+
+    font-family: "Great Vibes", cursive;
+
+    font-size:
+        clamp(60px, 10vw, 100px);
+
+    font-weight: 400;
+
+    color: #f7b3c2;
+
+    margin: 10px 0;
+}
+
+.intro p {
+
+    font-family:
+        "Cormorant Garamond",
+        serif;
+
+    font-size: 24px;
+
+    color: #f6dfe5;
+
+    line-height: 1.4;
+}
+
+
+/* =====================================================
+   SURPRISE BUTTON
+===================================================== */
+
+.start-btn {
+
+    margin-top: 30px;
+
+    padding:
+        16px 32px;
+
+    border: none;
+
+    border-radius: 999px;
+
+    background:
+        linear-gradient(
+            135deg,
+            #ed7795,
+            #c94f70
+        );
+
+    color: white;
+
+    font-family: Montserrat, sans-serif;
+
+    font-weight: 600;
+
+    cursor: pointer;
+
+    box-shadow:
+        0 12px 35px
+        rgba(233,111,145,.35);
+
+    transition: .3s;
+}
+
+
+/* LOCKED */
+
+.start-btn:disabled {
+
+    opacity: .40;
+
+    cursor: not-allowed;
+
+    transform: none;
+
+    box-shadow: none;
+}
+
+
+/* UNLOCKED */
+
+.start-btn.unlocked {
+
+    opacity: 1;
+
+    cursor: pointer;
+
+    animation:
+        surprisePulse
+        1.5s infinite;
+}
+
+@keyframes surprisePulse {
+
+    0%,
+    100% {
+
+        transform: scale(1);
+
+        box-shadow:
+            0 12px 35px
+            rgba(233,111,145,.35);
+    }
+
+    50% {
+
+        transform: scale(1.06);
+
+        box-shadow:
+            0 15px 50px
+            rgba(233,111,145,.65);
+    }
+
+}
+
+.note {
+
+    font-size: 11px !important;
+
+    opacity: .65;
+
+    margin-top: 14px;
+}
+
+
+/* =====================================================
+   HERO
+===================================================== */
+
+.hero {
+
+    min-height: 100vh;
+
+    display: flex;
+
+    align-items: center;
+
+    padding: 35px 20px;
+
+    position: relative;
+
+    overflow: hidden;
+
+    background:
+
+        radial-gradient(
+            circle at 10% 30%,
+            #602d43,
+            transparent 28%
+        ),
+
+        radial-gradient(
+            circle at 90% 70%,
+            #4b2738,
+            transparent 28%
+        ),
+
+        linear-gradient(
+            135deg,
+            #10090e,
+            #28131e 55%,
+            #120a0f
+        );
+}
+
+.hero-inner {
+
+    position: relative;
+
+    z-index: 2;
+
+    width: 100%;
+
+    max-width: 1150px;
+
+    margin: auto;
+
+    display: grid;
+
+    grid-template-columns:
+        1fr 1fr;
+
+    gap: 55px;
+
+    align-items: center;
+}
+
+.portrait {
+
+    display: block;
+
+    width:
+        min(420px,80vw);
+
+    aspect-ratio: 3 / 4;
+
+    object-fit: cover;
+
+    margin: auto;
+
+    border-radius:
+        220px
+        220px
+        30px
+        30px;
+
+    border:
+        1px solid
+        rgba(255,255,255,.28);
+
+    box-shadow:
+        0 30px 90px
+        rgba(0,0,0,.55);
+}
+
+.eyebrow {
+
+    text-transform: uppercase;
+
+    letter-spacing: 4px;
+
+    font-size: 11px;
+
+    color: #eac5cf;
+}
+
+.hero h1 {
+
+    font-family:
+        "Great Vibes",
+        cursive;
+
+    font-size:
+        clamp(65px,9vw,120px);
+
+    font-weight: 400;
+
+    line-height: .9;
+
+    color: white;
+
+    margin: 16px 0;
+}
+
+.hero h1 span {
+
+    color: #f5a9bb;
+
+    display: block;
+}
+
+.hero-sub {
+
+    color: #f9e7eb;
+
+    font-family:
+        "Cormorant Garamond",
+        serif;
+
+    font-size: 25px;
+
+    line-height: 1.35;
+
+    margin:
+        20px 0 28px;
+}
+
+
+/* =====================================================
+   COUNTDOWN
+===================================================== */
+
+.countdown {
+
+    display: grid;
+
+    grid-template-columns:
+        repeat(4,1fr);
+
+    gap: 10px;
+}
+
+.timebox {
+
+    background:
+        rgba(255,255,255,.07);
+
+    border:
+        1px solid
+        rgba(255,255,255,.20);
+
+    border-radius: 16px;
+
+    padding:
+        15px 6px;
+
+    text-align: center;
+
+    backdrop-filter:
+        blur(10px);
+}
+
+.timebox b {
+
+    display: block;
+
+    font-family:
+        "Cormorant Garamond",
+        serif;
+
+    color: white;
+
+    font-size: 39px;
+}
+
+.timebox small {
+
+    font-size: 9px;
+
+    letter-spacing: 2px;
+
+    color: #e8cbd3;
+}
+
+.scroll {
+
+    margin-top: 25px;
+
+    color: #e7c4ce;
+
+    font-size: 10px;
+
+    letter-spacing: 2px;
+
+    text-transform: uppercase;
+
+    text-align: center;
+}
+
+
+/* =====================================================
+   MIDNIGHT SCREEN
+===================================================== */
+
+.midnight {
+
+    position: fixed;
+
+    inset: 0;
+
+    z-index: 9998;
+
+    display: flex;
+
+    align-items: center;
+
+    justify-content: center;
+
+    text-align: center;
+
+    padding: 25px;
+
+    background:
+
+        radial-gradient(
+            circle at center,
+            #5b243d 0,
+            #210f1a 42%,
+            #080509 100%
+        );
+
+    color: white;
+
+    opacity: 0;
+
+    pointer-events: none;
+
+    transition:
+        opacity 1.5s ease;
+}
+
+.midnight.show {
+
+    opacity: 1;
+
+    pointer-events: auto;
+}
+
+.midnight-content {
+
+    max-width: 850px;
+}
+
+.midnight .small {
+
+    text-transform: uppercase;
+
+    letter-spacing: 5px;
+
+    font-size: 12px;
+
+    color: #f5cdd6;
+}
+
+.midnight h2 {
+
+    font-family:
+        "Great Vibes",
+        cursive;
+
+    font-size:
+        clamp(65px,12vw,140px);
+
+    font-weight: 400;
+
+    color: #ffb4c5;
+
+    line-height: .9;
+
+    margin: 20px 0;
+}
+
+.midnight p {
+
+    font-family:
+        "Cormorant Garamond",
+        serif;
+
+    font-size: 27px;
+
+    line-height: 1.35;
+}
+
+.enter-message {
+
+    margin-top: 30px;
+
+    padding:
+        15px 28px;
+
+    border-radius: 999px;
+
+    border:
+        1px solid
+        rgba(255,255,255,.35);
+
+    background:
+        rgba(255,255,255,.08);
+
+    color: white;
+
+    cursor: pointer;
+
+    font-family: Montserrat;
+}
+
+
+/* =====================================================
+   SECTIONS
+===================================================== */
+
+.section {
+
+    padding:
+        90px 20px;
+}
+
+.container {
+
+    max-width: 1100px;
+
+    margin: auto;
+}
+
+.title {
+
+    font-family:
+        "Great Vibes",
+        cursive;
+
+    font-size: 60px;
+
+    font-weight: 400;
+
+    color: var(--pink);
+}
+
+
+/* =====================================================
+   LOVE LETTER
+===================================================== */
+
+.letter {
+
+    background: var(--cream);
+}
+
+.letter-grid {
+
+    display: grid;
+
+    grid-template-columns:
+        1.1fr .9fr;
+
+    gap: 55px;
+
+    align-items: center;
+}
+
+.letter p {
+
+    font-family:
+        "Cormorant Garamond",
+        serif;
+
+    font-size: 24px;
+
+    line-height: 1.55;
+
+    margin: 18px 0;
+}
+
+.signature {
+
+    font-family:
+        "Great Vibes",
+        cursive;
+
+    font-size: 40px;
+
+    color: var(--pink);
+}
+
+.polaroid {
+
+    background: white;
+
+    padding:
+        12px 12px 30px;
+
+    box-shadow:
+        0 20px 45px
+        rgba(50,20,30,.15);
+
+    transform: rotate(3deg);
+}
+
+.polaroid img {
+
+    width: 100%;
+
+    aspect-ratio: 4 / 5;
+
+    object-fit: cover;
+}
+
+.polaroid p {
+
+    text-align: center;
+
+    font-family:
+        "Great Vibes",
+        cursive;
+
+    color: #7f4657;
+
+    font-size: 27px;
+
+    margin:
+        5px 0 0;
+}
+
+
+/* =====================================================
+   MEMORIES
+===================================================== */
+
+.memories {
+
+    background:
+        linear-gradient(
+            #fce8ed,
+            #fff5ef
+        );
+}
+
+.memory-grid {
+
+    display: grid;
+
+    grid-template-columns:
+        repeat(2,1fr);
+
+    gap: 28px;
+
+    margin-top: 35px;
+}
+
+.memory {
+
+    background: white;
+
+    padding: 12px;
+
+    box-shadow:
+        0 15px 40px
+        rgba(75,35,48,.12);
+}
+
+.memory img {
+
+    width: 100%;
+
+    height: 500px;
+
+    object-fit: cover;
+}
+
+.memory p {
+
+    font-family:
+        "Great Vibes",
+        cursive;
+
+    text-align: center;
+
+    color: #8b4356;
+
+    font-size: 29px;
+
+    padding: 8px;
+}
+
+
+/* =====================================================
+   SONG
+===================================================== */
+
+.song {
+
+    background: white;
+}
+
+.song-card {
+
+    margin:
+        30px auto 0;
+
+    max-width: 760px;
+
+    background:
+        #fff0f4;
+
+    padding: 30px;
+
+    border-radius: 24px;
+
+    text-align: center;
+
+    box-shadow:
+        0 18px 45px
+        rgba(50,20,30,.1);
+}
+
+.song-card h3 {
+
+    font-family:
+        "Cormorant Garamond",
+        serif;
+
+    font-size: 34px;
+}
+
+.song-card p {
+
+    font-family:
+        "Cormorant Garamond",
+        serif;
+
+    font-size: 21px;
+
+    margin: 8px 0;
+}
+
+audio {
+
+    width: 100%;
+
+    margin-top: 18px;
+}
+
+
+/* =====================================================
+   SURPRISE QUESTION
+===================================================== */
+
+.surprise {
+
+    background:
+        linear-gradient(
+            135deg,
+            #211018,
+            #512435
+        );
+
+    color: white;
+
+    text-align: center;
+}
+
+.surprise .title {
+
+    color: #f5a7ba;
+}
+
+.surprise p {
+
+    font-family:
+        "Cormorant Garamond",
+        serif;
+
+    font-size: 25px;
+
+    line-height: 1.4;
+
+    margin: 12px auto;
+}
+
+button.choice {
+
+    padding:
+        15px 28px;
+
+    margin:
+        15px 5px 5px;
+
+    border-radius: 999px;
+
+    cursor: pointer;
+
+    font-weight: 600;
+}
+
+.yes {
+
+    border: 0;
+
+    background: #eb7795;
+
+    color: white;
+}
+
+.tell {
+
+    border:
+        1px solid
+        rgba(255,255,255,.4);
+
+    background: transparent;
+
+    color: white;
+}
+
+#answer {
+
+    min-height: 40px;
+
+    margin-top: 20px;
+
+    font-family:
+        "Cormorant Garamond",
+        serif;
+
+    font-size: 23px;
+
+    color: #ffd5df;
+}
+
+
+/* =====================================================
+   FINAL
+===================================================== */
+
+.final {
+
+    text-align: center;
+
+    background: #fff8f2;
+}
+
+.final p {
+
+    max-width: 720px;
+
+    margin: 18px auto;
+
+    font-family:
+        "Cormorant Garamond",
+        serif;
+
+    font-size: 24px;
+
+    line-height: 1.5;
+}
+
+footer {
+
+    text-align: center;
+
+    padding: 22px;
+
+    background: #211018;
+
+    color: #d9bdc6;
+
+    font-size: 11px;
+
+    letter-spacing: 1px;
+}
+
+
+/* =====================================================
+   CONFETTI
+===================================================== */
+
+.confetti {
+
+    position: fixed;
+
+    top: -20px;
+
+    z-index: 10001;
+
+    width: 8px;
+
+    height: 14px;
+
+    pointer-events: none;
+
+    animation:
+        drop 4s linear forwards;
+}
+
+@keyframes drop {
+
+    to {
+
+        transform:
+            translateY(110vh)
+            rotate(720deg);
+
+        opacity: 0;
+    }
+}
+
+
+/* =====================================================
+   FLOATING HEARTS
+===================================================== */
+
+.heart {
+
+    position: absolute;
+
+    color: #f59db2;
+
+    opacity: .35;
+
+    animation:
+        float 8s linear infinite;
+}
+
+@keyframes float {
+
+    0% {
+
+        transform:
+            translateY(110vh)
+            rotate(0);
+
+        opacity: 0;
+    }
+
+    15% {
+
+        opacity: .45;
+    }
+
+    100% {
+
+        transform:
+            translateY(-20vh)
+            rotate(360deg);
+
+        opacity: 0;
+    }
+}
+
+
+/* =====================================================
+   MOBILE
+===================================================== */
+
+@media(max-width:800px) {
+
+    .hero-inner,
+    .letter-grid {
+
+        grid-template-columns: 1fr;
+
+        text-align: center;
+    }
+
+    .hero-inner {
+
+        gap: 35px;
+    }
+
+    .portrait {
+
+        width:
+            min(310px,80vw);
+    }
+
+    .hero-sub {
+
+        margin-left: auto;
+
+        margin-right: auto;
+    }
+
+    .countdown {
+
+        max-width: 600px;
+
+        margin: auto;
+    }
+
+    .memory-grid {
+
+        grid-template-columns: 1fr;
+    }
+
+    .memory img {
+
+        height: 520px;
+    }
+
+    .title {
+
+        font-size: 50px;
+    }
+
+    .midnight h2 {
+
+        font-size:
+            clamp(55px,15vw,90px);
+    }
+
+    .midnight p {
+
+        font-size: 23px;
+    }
+
+}
+
+</style>
+
+</head>
+
+
+<body>
+
+
+<!-- =====================================================
+     INTRO / LOCK SCREEN
+===================================================== -->
+
+<div
+    class="intro"
+    id="intro"
+>
+
+    <div class="intro-card">
+
+
+        <div class="intro-heart">
+            ♡
+        </div>
+
+
+        <div
+            class="script"
+            style="
+                font-size:42px;
+                color:#f4a9ba;
+            "
+        >
+            A little surprise for
+        </div>
+
+
+        <h1>
+            Sharmila
+        </h1>
+
+
+        <p>
+
+            Your birthday countdown has started…
+
+            <br>
+
+            There is something waiting for you
+            at midnight. ❤️
+
+        </p>
+
+
+        <!-- LOCKED UNTIL MIDNIGHT -->
+
+        <button
+            class="start-btn"
+            id="surpriseBtn"
+            onclick="startExperience()"
+            disabled
+        >
+
+            🔒 Surprise Locked
+
+        </button>
+
+
+        <p
+            class="note"
+            id="lockMessage"
+        >
+
+            Your surprise unlocks exactly at midnight ❤️
+
+        </p>
+
+    </div>
+
+</div>
+
+
+
+<!-- =====================================================
+     HERO
+===================================================== -->
+
+<section
+    class="hero"
+    id="home"
+>
+
+
+    <span
+        class="heart"
+        style="
+            left:5%;
+            animation-delay:0s;
+        "
+    >
+        ♥
+    </span>
+
+
+    <span
+        class="heart"
+        style="
+            left:25%;
+            animation-delay:2s;
+        "
+    >
+        ♡
+    </span>
+
+
+    <span
+        class="heart"
+        style="
+            left:75%;
+            animation-delay:1s;
+        "
+    >
+        ♥
+    </span>
+
+
+    <span
+        class="heart"
+        style="
+            left:92%;
+            animation-delay:4s;
+        "
+    >
+        ♡
+    </span>
+
+
+
+    <div class="hero-inner">
+
+
+        <div>
+
+            <img
+                class="portrait"
+                src="images/sharmila-1.jpg"
+                alt="Sharmila"
+            >
+
+        </div>
+
+
+
+        <div>
+
+
+            <div class="eyebrow">
+
+                From Sahin SK, with love
+
+            </div>
+
+
+            <h1>
+
+                Happy Birthday
+
+                <span>
+                    Sharmila
+                </span>
+
+            </h1>
+
+
+            <p class="hero-sub">
+
+                Your special day is almost here…
+
+                and a little piece of my heart
+                is waiting for you. ❤️
+
+            </p>
+
+
+
+            <!-- COUNTDOWN -->
+
+            <div class="countdown">
+
+
+                <div class="timebox">
+
+                    <b id="days">
+                        00
+                    </b>
+
+                    <small>
+                        DAYS
+                    </small>
+
+                </div>
+
+
+                <div class="timebox">
+
+                    <b id="hours">
+                        00
+                    </b>
+
+                    <small>
+                        HOURS
+                    </small>
+
+                </div>
+
+
+                <div class="timebox">
+
+                    <b id="minutes">
+                        00
+                    </b>
+
+                    <small>
+                        MINUTES
+                    </small>
+
+                </div>
+
+
+                <div class="timebox">
+
+                    <b id="seconds">
+                        00
+                    </b>
+
+                    <small>
+                        SECONDS
+                    </small>
+
+                </div>
+
+
+            </div>
+
+
+            <div class="scroll">
+
+                ↓ Keep scrolling, birthday girl ↓
+
+            </div>
+
+        </div>
+
+    </div>
+
+</section>
+
+
+
+<!-- =====================================================
+     LOVE LETTER
+===================================================== -->
+
+<section class="section letter">
+
+
+    <div class="container letter-grid">
+
+
+        <div>
+
+
+            <div class="title">
+
+                Hey Sharmila…
+
+            </div>
+
+
+            <p>
+
+                Tomorrow isn't just another date
+                on the calendar.
+
+                It's the day the world got a little
+                more beautiful because
+                <b>you</b> came into it.
+
+            </p>
+
+
+            <p>
+
+                We've only been together for
+                <b>2 months</b>,
+
+                but somehow you've already made
+                so many ordinary moments feel special.
+
+            </p>
+
+
+            <p>
+
+                This little website is my way
+                of saying something simple:
+
+            </p>
+
+
+            <p>
+
+                <i>
+                    You mean a lot to me. ❤️
+                </i>
+
+            </p>
+
+
+            <div class="signature">
+
+                — Sahin SK
+
+            </div>
+
+
+        </div>
+
+
+
+        <div class="polaroid">
+
+
+            <img
+                src="sharmila-2.jpg"
+                alt="Sharmila"
+            >
+
+
+            <p>
+
+                My favourite person ♡
+
+            </p>
+
+
+        </div>
+
+
+    </div>
+
+</section>
+
+
+
+<!-- =====================================================
+     MEMORIES
+===================================================== -->
+
+<section class="section memories">
+
+
+    <div class="container">
+
+
+        <div class="title">
+
+            Our Little Memories ♡
+
+        </div>
+
+
+        <div class="memory-grid">
+
+
+            <div class="memory">
+
+
+                <img
+                    src="sharmila-1.jpg"
+                    alt="Sharmila"
+                >
+
+
+                <p>
+
+                    That smile… ❤️
+
+                </p>
+
+
+            </div>
+
+
+
+            <div class="memory">
+
+
+                <img
+                    src="sharmila-2.jpg"
+                    alt="Sharmila"
+                >
+
+
+                <p>
+
+                    Beautiful, as always… ✨
+
+                </p>
+
+
+            </div>
+
+
+        </div>
+
+    </div>
+
+</section>
+
+
+
+<!-- =====================================================
+     OUR SONG
+===================================================== -->
+
+<section class="section song">
+
+
+    <div class="container">
+
+
+        <div class="title">
+
+            Our Song ♫
+
+        </div>
+
+
+        <div class="song-card">
+
+
+            <h3>
+
+                Amar name er roddure
+
+            </h3>
+
+
+            <p>
+
+                Close your eyes for a moment
+                and just feel it. ❤️
+
+            </p>
+
+
+            <audio
+                controls
+                preload="metadata"
+            >
+
+                <source
+                    src="song.mp3"
+                    type="audio/mpeg"
+                >
+
+                Your browser does not support audio.
+
+            </audio>
+
+
+        </div>
+
+    </div>
+
+</section>
+
+
+
+<!-- =====================================================
+     SURPRISE QUESTION
+===================================================== -->
+
+<section class="section surprise">
+
+
+    <div class="container">
+
+
+        <div class="title">
+
+            A Little Surprise For You 🎁
+
+        </div>
+
+
+        <p>
+
+            Do you know how special
+            you are to me?
+
+        </p>
+
+
+        <button
+            class="choice yes"
+            onclick="answer('yes')"
+        >
+
+            Yes, I know ❤️
+
+        </button>
+
+
+        <button
+            class="choice tell"
+            onclick="answer('tell')"
+        >
+
+            Tell me… ♡
+
+        </button>
+
+
+        <div id="answer"></div>
+
+
+    </div>
+
+</section>
+
+
+
+<!-- =====================================================
+     FINAL MESSAGE
+===================================================== -->
+
+<section class="section final">
+
+
+    <div class="container">
+
+
+        <div class="title">
+
+            Happy Birthday, My Love ❤️
+
+        </div>
+
+
+        <p>
+
+            May your smile stay this beautiful,
+            your dreams get bigger,
+
+            and your days be filled with everything
+            that makes you happy.
+
+        </p>
+
+
+        <p>
+
+            Thank you for being you.
+
+            I hope this is just the beginning
+            of many beautiful memories together.
+
+        </p>
+
+
+        <p>
+
+            <b>
+                Happy Birthday, Sharmila.
+            </b>
+
+            <br>
+
+            Today, tomorrow, and always. ❤️
+
+        </p>
+
+
+        <div class="signature">
+
+            With love, Sahin SK
+
+        </div>
+
+
+    </div>
+
+</section>
+
+
+
+<footer>
+
+    Made with ❤️ by Sahin SK
+
+</footer>
+
+
+
+<!-- =====================================================
+     BIRTHDAY SONG
+
+     IMPORTANT:
+     Keep happy-birthday.mp3 beside index.html
+===================================================== -->
+
+<audio
+    id="birthdaySong"
+    preload="auto"
+>
+
+    <source
+        src="happy-birthday.mp3"
+        type="audio/mpeg"
+    >
+
+</audio>
+
+
+
+<!-- =====================================================
+     MIDNIGHT SCREEN
+===================================================== -->
+
+<div
+    class="midnight"
+    id="midnight"
+>
+
+
+    <div class="midnight-content">
+
+
+        <div class="small">
+
+            The wait is over ✨
+
+        </div>
+
+
+        <h2>
+
+            Happy Birthday
+
+            <br>
+
+            Sharmila ❤️
+
+        </h2>
+
+
+        <p>
+
+            It's officially your special day.
+
+            <br>
+
+            And I have one more thing to say…
+
+        </p>
+
+
+        <button
+            class="enter-message"
+            onclick="closeMidnight()"
+        >
+
+            Open My Birthday Message ♡
+
+        </button>
+
+
+    </div>
+
+</div>
+
+
+
+<!-- =====================================================
+     JAVASCRIPT
+===================================================== -->
+
+<script>
+
+
+/* =====================================================
+   BIRTHDAY DATE
+
+   27 September 2026
+   12:00 AM
+   India Standard Time (+05:30)
+===================================================== */
+
+const birthday =
+    new Date(
+        "2026-09-27T00:00:00+05:30"
+    ).getTime();
+
+
+
+/* =====================================================
+   ELEMENTS
+===================================================== */
+
+const intro =
+    document.getElementById("intro");
+
+
+const midnight =
+    document.getElementById("midnight");
+
+
+const surpriseBtn =
+    document.getElementById("surpriseBtn");
+
+
+const lockMessage =
+    document.getElementById("lockMessage");
+
+
+const birthdaySong =
+    document.getElementById("birthdaySong");
+
+
+
+/* =====================================================
+   AUDIO SETTINGS
+===================================================== */
+
+birthdaySong.volume = 1.0;
+
+
+
+/* =====================================================
+   STATE
+===================================================== */
+
+let surpriseUnlocked = false;
+
+let birthdayOpened = false;
+
+
+
+/* =====================================================
+   OPEN SURPRISE
+
+   This only works after midnight.
+
+   The click itself is important because browsers
+   generally allow audio when playback is triggered
+   by a user's interaction.
+===================================================== */
+
+function startExperience() {
+
+
+    if (!surpriseUnlocked) {
+
+        return;
+
+    }
+
+
+    /* Hide intro */
+
+    intro.classList.add("hidden");
+
+
+    /* Show birthday screen */
+
+    midnight.classList.add("show");
+
+
+    /* ===============================================
+       PLAY HAPPY BIRTHDAY AUTOMATICALLY
+       =============================================== */
+
+    birthdaySong.currentTime = 0;
+
+
+    birthdaySong
+        .play()
+        .then(() => {
+
+            console.log(
+                "🎵 Happy Birthday song started!"
+            );
+
+        })
+        .catch((error) => {
+
+            console.log(
+                "Audio playback failed:",
+                error
+            );
+
+        });
+
+
+    /* Confetti */
+
+    createConfetti();
+
+
+    birthdayOpened = true;
+
+}
+
+
+
+/* =====================================================
+   CLOSE MIDNIGHT SCREEN
+===================================================== */
+
+function closeMidnight() {
+
+
+    midnight.classList.remove("show");
+
+
+    /*
+       Keep the birthday song playing.
+    */
+
+    birthdaySong
+        .play()
+        .catch(() => {});
+
+
+    /*
+       Scroll to main page.
+    */
+
+    document
+        .getElementById("home")
+        .scrollIntoView({
+            behavior: "smooth"
+        });
+
+}
+
+
+
+/* =====================================================
+   COUNTDOWN
+===================================================== */
+
+function updateCountdown() {
+
+
+    const now =
+        Date.now();
+
+
+    const difference =
+        birthday - now;
+
+
+
+    /* ===============================================
+       BEFORE MIDNIGHT
+    =============================================== */
+
+    if (difference > 0) {
+
+
+        const days =
+            Math.floor(
+                difference /
+                86400000
+            );
+
+
+        const hours =
+            Math.floor(
+                difference /
+                3600000
+            ) % 24;
+
+
+        const minutes =
+            Math.floor(
+                difference /
+                60000
+            ) % 60;
+
+
+        const seconds =
+            Math.floor(
+                difference /
+                1000
+            ) % 60;
+
+
+
+        document
+            .getElementById("days")
+            .textContent =
+            String(days)
+            .padStart(2, "0");
+
+
+        document
+            .getElementById("hours")
+            .textContent =
+            String(hours)
+            .padStart(2, "0");
+
+
+        document
+            .getElementById("minutes")
+            .textContent =
+            String(minutes)
+            .padStart(2, "0");
+
+
+        document
+            .getElementById("seconds")
+            .textContent =
+            String(seconds)
+            .padStart(2, "0");
+
+
+        return;
+
+    }
+
+
+
+    /* ===============================================
+       MIDNIGHT
+    =============================================== */
+
+    document
+        .getElementById("days")
+        .textContent = "00";
+
+
+    document
+        .getElementById("hours")
+        .textContent = "00";
+
+
+    document
+        .getElementById("minutes")
+        .textContent = "00";
+
+
+    document
+        .getElementById("seconds")
+        .textContent = "00";
+
+
+    unlockSurprise();
+
+}
+
+
+
+/* =====================================================
+   UNLOCK SURPRISE
+===================================================== */
+
+function unlockSurprise() {
+
+
+    /*
+       Prevent duplicate unlocking.
+    */
+
+    if (surpriseUnlocked) {
+
+        return;
+
+    }
+
+
+    surpriseUnlocked = true;
+
+
+    /*
+       Enable button.
+    */
+
+    surpriseBtn.disabled = false;
+
+
+    /*
+       Change button text.
+    */
+
+    surpriseBtn.innerHTML =
+        "💖 Open Your Surprise";
+
+
+    /*
+       Add animation.
+    */
+
+    surpriseBtn.classList.add(
+        "unlocked"
+    );
+
+
+    /*
+       Change message.
+    */
+
+    lockMessage.innerHTML =
+        "✨ It's midnight! Your surprise is ready. ✨";
+
+
+    /*
+       Small midnight confetti.
+    */
+
+    createConfetti();
+
+}
+
+
+
+/* =====================================================
+   CONFETTI
+===================================================== */
+
+function createConfetti() {
+
+
+    for (
+        let i = 0;
+        i < 120;
+        i++
+    ) {
+
+
+        const confetti =
+            document.createElement(
+                "span"
+            );
+
+
+        confetti.className =
+            "confetti";
+
+
+        confetti.style.left =
+            Math.random() *
+            100 +
+            "vw";
+
+
+        confetti.style.animationDelay =
+            Math.random() *
+            1.5 +
+            "s";
+
+
+        const colors = [
+
+            "#f5a7b8",
+            "#e96f91",
+            "#e3bc7a",
+            "#ffffff",
+            "#d86a8a"
+
+        ];
+
+
+        confetti.style.background =
+            colors[
+                Math.floor(
+                    Math.random() *
+                    colors.length
+                )
+            ];
+
+
+        document
+            .body
+            .appendChild(
+                confetti
+            );
+
+
+        setTimeout(
+            () => {
+
+                confetti.remove();
+
+            },
+            5000
+        );
+
+    }
+
+}
+
+
+
+/* =====================================================
+   SURPRISE QUESTION
+===================================================== */
+
+function answer(type) {
+
+
+    const box =
+        document.getElementById(
+            "answer"
+        );
+
+
+    if (type === "yes") {
+
+
+        box.innerHTML =
+
+            `
+            Then you already know
+            what my heart keeps trying to say…
+
+            I love having you in my life. ❤️
+            `;
+
+
+    } else {
+
+
+        box.innerHTML =
+
+            `
+            You are one of the sweetest
+            chapters I've started writing.
+
+            And I hope we get many more
+            chapters together. ♡
+            `;
+
+    }
+
+}
+
+
+
+/* =====================================================
+   START COUNTDOWN
+===================================================== */
+
+setInterval(
+    updateCountdown,
+    1000
+);
+
+
+updateCountdown();
+
+
+</script>
+
+
+</body>
+</html>
